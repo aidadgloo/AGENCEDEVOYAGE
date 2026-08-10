@@ -1,0 +1,1403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =====================================================
+                    ROOT
+===================================================== */
+
+:root {
+
+    --primary-color: #0B5ED7;
+    --secondary-color: #00B4D8;
+    --accent-color: #FFC857;
+
+    --dark-color: #1F2937;
+    --light-color: #F8FAFC;
+    --white-color: #FFFFFF;
+    --gray-color: #6B7280;
+
+    --bg-color: #F4F8FB;
+    --card-bg: #FFFFFF;
+
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    --border-radius: 15px;
+
+    --transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+                    RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--bg-color);
+
+    color: var(--dark-color);
+
+}
+
+
+/* =====================================================
+                    NAVBAR
+===================================================== */
+
+.navbar {
+
+    background-color: rgba(255, 255, 255, 0.97);
+
+    padding: 15px 0;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+    transition: var(--transition);
+
+    z-index: 1000;
+
+}
+
+
+.navbar-brand {
+
+    color: var(--primary-color) !important;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+.navbar-brand i {
+
+    color: var(--secondary-color);
+
+    margin-right: 6px;
+
+}
+
+
+.navbar-nav {
+
+    gap: 8px;
+
+}
+
+
+.nav-link {
+
+    color: var(--dark-color) !important;
+
+    font-weight: 500;
+
+    padding: 10px 15px !important;
+
+    position: relative;
+
+    transition: var(--transition);
+
+}
+
+
+.nav-link:hover {
+
+    color: var(--primary-color) !important;
+
+}
+
+
+/* Ligne sous le lien */
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+
+    bottom: 3px;
+
+    width: 0;
+
+    height: 2px;
+
+    background-color: var(--secondary-color);
+
+    transition: var(--transition);
+
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+
+    width: calc(100% - 30px);
+
+}
+
+
+.nav-link.active {
+
+    color: var(--primary-color) !important;
+
+}
+
+
+/* =====================================================
+                BOUTON NAVBAR MOBILE
+===================================================== */
+
+.navbar-toggler {
+
+    border: none;
+
+    padding: 5px;
+
+}
+
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+
+}
+
+
+/* =====================================================
+                    HERO
+===================================================== */
+
+.hero {
+
+    margin-top: 70px;
+
+}
+
+
+.carousel-img {
+
+    height: 90vh;
+
+    min-height: 550px;
+
+    object-fit: cover;
+
+    filter: brightness(55%);
+
+}
+
+
+/* =====================================================
+                TEXTE DU CAROUSEL
+===================================================== */
+
+.carousel-caption {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 10%;
+
+    right: 10%;
+
+    transform: translateY(-50%);
+
+    text-align: left;
+
+    max-width: 750px;
+
+}
+
+
+.hero-small-title {
+
+    display: inline-block;
+
+    color: var(--accent-color);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.carousel-caption h1 {
+
+    font-size: 55px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    color: var(--white-color);
+
+    margin-bottom: 20px;
+
+}
+
+
+.carousel-caption p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: var(--white-color);
+
+    max-width: 650px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =====================================================
+                    BOUTON
+===================================================== */
+
+.btn-main {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: var(--accent-color);
+
+    color: var(--dark-color);
+
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+
+.btn-main:hover {
+
+    background-color: var(--secondary-color);
+
+    color: var(--white-color);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.btn-main i {
+
+    transition: var(--transition);
+
+}
+
+
+.btn-main:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* =====================================================
+            INDICATEURS DU CAROUSEL
+===================================================== */
+
+.carousel-indicators button {
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    margin: 0 5px;
+
+}
+
+
+.carousel-indicators .active {
+
+    background-color: var(--accent-color);
+
+}
+
+
+/* =====================================================
+            BOUTONS PRECEDENT / SUIVANT
+===================================================== */
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    width: 7%;
+
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    background-size: 50%;
+
+    border-radius: 50%;
+
+}
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .navbar-nav {
+
+        gap: 0;
+
+        padding-top: 15px;
+
+    }
+
+
+    .nav-link {
+
+        padding: 10px 5px !important;
+
+    }
+
+
+    .carousel-caption {
+
+        left: 8%;
+
+        right: 8%;
+
+    }
+
+
+    .carousel-caption h1 {
+
+        font-size: 42px;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        margin-top: 65px;
+
+    }
+
+
+    .carousel-img {
+
+        height: 75vh;
+
+        min-height: 500px;
+
+    }
+
+
+    .carousel-caption {
+
+        left: 7%;
+
+        right: 7%;
+
+        text-align: center;
+
+    }
+
+
+    .hero-small-title {
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+
+    .carousel-caption h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .carousel-caption p {
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+    }
+
+
+    .btn-main {
+
+        padding: 11px 22px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+
+        font-size: 20px;
+
+    }
+
+
+    .carousel-img {
+
+        height: 70vh;
+
+        min-height: 450px;
+
+    }
+
+
+    .carousel-caption h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .carousel-caption p {
+
+        font-size: 14px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .hero-small-title {
+
+        font-size: 10px;
+
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+
+        width: 10%;
+
+    }
+
+}
+/* =====================================================
+        TITRES DES SECTIONS
+===================================================== */
+
+.section-title span,
+.section-label {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-title h2,
+.engagements h2 {
+
+    color: var(--dark-color);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 12px 0 15px;
+
+}
+
+
+.section-title p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--gray-color);
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+        SECTION POURQUOI NOUS
+===================================================== */
+
+.why-us {
+
+    background-color: var(--white-color);
+
+}
+
+
+/* =====================================================
+        CARTES
+===================================================== */
+
+.feature-card {
+
+    background-color: var(--card-bg);
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid rgba(0, 0, 0, 0.04);
+
+    transition: var(--transition);
+
+}
+
+
+.feature-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.feature-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(11, 94, 215, 0.1);
+
+    color: var(--primary-color);
+
+    font-size: 32px;
+
+    transition: var(--transition);
+
+}
+
+
+.feature-card:hover .feature-icon {
+
+    background: var(--primary-color);
+
+    color: var(--white-color);
+
+}
+
+
+.feature-card h3 {
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+
+}
+
+
+.feature-card p {
+
+    color: var(--gray-color);
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+
+}
+
+
+/* =====================================================
+        NOS ENGAGEMENTS
+===================================================== */
+
+.engagements {
+
+    background-color: var(--light-color);
+
+}
+
+
+.engagements > .container {
+
+    max-width: 1140px;
+
+}
+
+
+.engagements h2 {
+
+    margin-top: 10px;
+
+}
+
+
+.engagements > .container > .row > .col-lg-6 > p {
+
+    color: var(--gray-color);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =====================================================
+        ENGAGEMENT ITEMS
+===================================================== */
+
+.engagement-item {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.engagement-icon {
+
+    min-width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--white-color);
+
+    color: var(--primary-color);
+
+    box-shadow: var(--shadow);
+
+    font-size: 21px;
+
+}
+
+
+.engagement-item h4 {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+}
+
+
+.engagement-item p {
+
+    color: var(--gray-color);
+
+    margin: 0;
+
+    line-height: 1.6;
+
+}
+
+
+/* =====================================================
+        IMAGE ENGAGEMENT
+===================================================== */
+
+.engagement-image {
+
+    position: relative;
+
+}
+
+
+.engagement-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.experience-box {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 25px;
+
+    background-color: var(--white-color);
+
+    padding: 18px 25px;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.experience-box strong {
+
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 22px;
+
+}
+
+
+.experience-box span {
+
+    color: var(--gray-color);
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+        APPEL À L'ACTION
+===================================================== */
+
+.cta-section {
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+}
+
+
+.cta-content {
+
+    color: var(--white-color);
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+
+.cta-content > span {
+
+    color: var(--accent-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.cta-content h2 {
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+
+}
+
+
+.cta-content p {
+
+    color: var(--white-color);
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =====================================================
+        RESPONSIVE PARTIE 2
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .section-title h2,
+    .engagements h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .feature-card {
+
+        padding: 30px 20px;
+
+    }
+
+
+    .engagement-image img {
+
+        height: 350px;
+
+    }
+
+
+    .cta-content h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .section-title h2,
+    .engagements h2 {
+
+        font-size: 26px;
+
+    }
+
+
+    .experience-box {
+
+        left: 15px;
+
+        bottom: 15px;
+
+    }
+
+}
+/* =====================================================
+                MODAL RESERVATION
+===================================================== */
+
+.modal-content {
+
+    border: none;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.modal-header {
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: var(--white-color);
+
+    padding: 20px 25px;
+
+}
+
+
+.modal-title {
+
+    font-weight: 600;
+
+}
+
+
+.modal-title i {
+
+    margin-right: 8px;
+
+    color: var(--accent-color);
+
+}
+
+
+.modal-header .btn-close {
+
+    filter: brightness(0) invert(1);
+
+}
+
+
+.modal-body {
+
+    padding: 30px;
+
+}
+
+
+.reservation-intro {
+
+    color: var(--gray-color);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-label {
+
+    font-weight: 500;
+
+    color: var(--dark-color);
+
+}
+
+
+.form-control,
+.form-select {
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    transition: var(--transition);
+
+}
+
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 0.2rem rgba(11, 94, 215, 0.12);
+
+}
+
+
+textarea.form-control {
+
+    resize: none;
+
+}
+
+
+
+/* =====================================================
+                        FOOTER
+===================================================== */
+
+.footer {
+
+    background-color: var(--dark-color);
+
+    color: var(--white-color);
+
+    padding: 65px 0 25px;
+
+}
+
+
+.footer-brand {
+
+    display: inline-block;
+
+    color: var(--white-color);
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+}
+
+
+.footer-brand i {
+
+    color: var(--accent-color);
+
+    margin-right: 6px;
+
+}
+
+
+.footer-description {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    max-width: 350px;
+
+}
+
+
+/* =====================================================
+                RESEAUX SOCIAUX
+===================================================== */
+
+.social-links {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.social-links a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: var(--white-color);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+
+.social-links a:hover {
+
+    background-color: var(--secondary-color);
+
+    transform: translateY(-4px);
+
+}
+
+
+/* =====================================================
+                    TITRES FOOTER
+===================================================== */
+
+.footer h5 {
+
+    color: var(--white-color);
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* =====================================================
+                    LIENS FOOTER
+===================================================== */
+
+.footer-links {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+.footer-links li {
+
+    margin-bottom: 12px;
+
+}
+
+
+.footer-links a {
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    transition: var(--transition);
+
+}
+
+
+.footer-links a:hover {
+
+    color: var(--accent-color);
+
+    padding-left: 5px;
+
+}
+
+
+/* =====================================================
+                INFORMATIONS CONTACT
+===================================================== */
+
+.contact-info {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+}
+
+
+.contact-info li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    color: #cbd5e1;
+
+    line-height: 1.5;
+
+}
+
+
+.contact-info i {
+
+    color: var(--accent-color);
+
+    font-size: 17px;
+
+    margin-top: 2px;
+
+}
+
+
+/* =====================================================
+                LIGNE FOOTER
+===================================================== */
+
+.footer-line {
+
+    border-color: rgba(255, 255, 255, 0.15);
+
+    margin: 40px 0 20px;
+
+}
+
+
+/* =====================================================
+                COPYRIGHT
+===================================================== */
+
+.footer-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+}
+
+
+.footer-bottom strong {
+
+    color: var(--white-color);
+
+}
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        padding: 50px 0 20px;
+
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .modal-body {
+
+        padding: 22px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .footer-brand {
+
+        font-size: 22px;
+
+    }
+
+
+    .footer {
+
+        text-align: center;
+
+    }
+
+
+    .footer-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .social-links {
+
+        justify-content: center;
+
+    }
+
+
+    .contact-info li {
+
+        justify-content: center;
+
+    }
+
+}
