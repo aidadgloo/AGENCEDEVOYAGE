@@ -1401,3 +1401,1257 @@ textarea.form-control {
     }
 
 }
+/* =====================================================
+                    PAGE CIRCUITS
+===================================================== */
+
+.circuits-hero {
+
+    min-height: 400px;
+
+    margin-top: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/circuits-banner.jpg")
+        center/cover no-repeat;
+
+}
+
+
+.circuits-hero-content {
+
+    color: var(--white-color);
+
+}
+
+
+.circuits-hero-content span {
+
+    color: var(--accent-color);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.circuits-hero-content h1 {
+
+    font-size: 52px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+
+}
+
+
+.circuits-hero-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ================= TITRE ================= */
+
+.section-title span {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-title h2 {
+
+    color: var(--dark-color);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 12px 0;
+
+}
+
+
+.section-title p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: var(--gray-color);
+
+    line-height: 1.7;
+
+}
+
+
+/* ================= CARTES ================= */
+
+.circuit-card {
+
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    transition: var(--transition);
+
+}
+
+
+.circuit-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+
+}
+
+
+/* ================= IMAGE ================= */
+
+.circuit-image {
+
+    position: relative;
+
+    height: 230px;
+
+    overflow: hidden;
+
+}
+
+
+.circuit-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+
+}
+
+
+.circuit-card:hover .circuit-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+/* ================= BADGE ================= */
+
+.circuit-badge {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background-color: var(--accent-color);
+
+    color: var(--dark-color);
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/* ================= CONTENU ================= */
+
+.circuit-content {
+
+    padding: 25px;
+
+}
+
+
+.circuit-location {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.circuit-content h3 {
+
+    color: var(--dark-color);
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    margin: 10px 0;
+
+}
+
+
+.circuit-content > p {
+
+    color: var(--gray-color);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ================= INFOS ================= */
+
+.circuit-info {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    margin-top: 15px;
+
+    border-top: 1px solid #eee;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.circuit-info span {
+
+    color: var(--gray-color);
+
+    font-size: 12px;
+
+}
+
+
+.circuit-info i {
+
+    color: var(--primary-color);
+
+    margin-right: 5px;
+
+}
+
+
+/* ================= PRIX ================= */
+
+.circuit-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+}
+
+
+.circuit-bottom small {
+
+    display: block;
+
+    color: var(--gray-color);
+
+    font-size: 11px;
+
+}
+
+
+.circuit-bottom strong {
+
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 18px;
+
+}
+
+
+.circuit-bottom .btn-main {
+
+    padding: 9px 18px;
+
+    font-size: 13px;
+
+}
+
+
+/* ================= CTA ================= */
+
+.circuits-cta {
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color: var(--white-color);
+
+}
+
+
+.circuits-cta span {
+
+    color: var(--accent-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.circuits-cta h2 {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+
+}
+
+
+.circuits-cta p {
+
+    color: var(--white-color);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .circuits-hero {
+
+        min-height: 350px;
+
+    }
+
+    .circuits-hero-content h1 {
+
+        font-size: 40px;
+
+    }
+
+    .section-title h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .circuits-hero {
+
+        min-height: 320px;
+
+    }
+
+    .circuits-hero-content h1 {
+
+        font-size: 32px;
+
+    }
+
+    .circuit-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .circuit-bottom .btn-main {
+
+        width: 100%;
+
+    }
+
+}
+/* =====================================================
+                    PAGE À PROPOS
+===================================================== */
+
+.about-hero {
+
+    min-height: 400px;
+
+    margin-top: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/about-banner.jpg")
+        center/cover no-repeat;
+
+}
+
+
+.about-hero-content {
+
+    color: var(--white-color);
+
+}
+
+
+.about-hero-content span {
+
+    color: var(--accent-color);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.about-hero-content h1 {
+
+    font-size: 52px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+
+}
+
+
+.about-hero-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+                    PRÉSENTATION
+===================================================== */
+
+.about-image,
+.why-image {
+
+    overflow: hidden;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.about-image img,
+.why-image img {
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+}
+
+
+.about-subtitle {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.about-presentation h2,
+.why-us h2 {
+
+    color: var(--dark-color);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 15px 0 20px;
+
+}
+
+
+.about-presentation p,
+.why-us p {
+
+    color: var(--gray-color);
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+                    NOS VALEURS
+===================================================== */
+
+.about-mission {
+
+    background-color: #f8fafc;
+
+}
+
+
+.value-card {
+
+    height: 100%;
+
+    padding: 35px 25px;
+
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+
+.value-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.value-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: rgba(11, 94, 215, 0.1);
+
+    color: var(--primary-color);
+
+    font-size: 28px;
+
+}
+
+
+.value-card h3 {
+
+    color: var(--dark-color);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.value-card p {
+
+    color: var(--gray-color);
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+                    POURQUOI NOUS
+===================================================== */
+
+.why-item {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.why-item > i {
+
+    color: var(--secondary-color);
+
+    font-size: 22px;
+
+    margin-top: 3px;
+
+}
+
+
+.why-item h4 {
+
+    color: var(--dark-color);
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+}
+
+
+.why-item p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+                    STATISTIQUES
+===================================================== */
+
+.about-stats {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+}
+
+
+.stat-box {
+
+    color: var(--white-color);
+
+}
+
+
+.stat-box i {
+
+    color: var(--accent-color);
+
+    font-size: 30px;
+
+}
+
+
+.stat-box h3 {
+
+    font-size: 35px;
+
+    font-weight: 700;
+
+    margin: 10px 0 3px;
+
+}
+
+
+.stat-box p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+                    APPEL À L'ACTION
+===================================================== */
+
+.about-cta {
+
+    background-color: var(--white-color);
+
+}
+
+
+.about-cta span {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.about-cta h2 {
+
+    color: var(--dark-color);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+
+}
+
+
+.about-cta p {
+
+    color: var(--gray-color);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+
+        min-height: 350px;
+
+    }
+
+
+    .about-hero-content h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .about-presentation h2,
+    .why-us h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .about-image img,
+    .why-image img {
+
+        height: 350px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .about-hero-content h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .about-hero-content p {
+
+        font-size: 15px;
+
+    }
+
+
+    .about-image img,
+    .why-image img {
+
+        height: 280px;
+
+    }
+
+}
+/* =====================================================
+                    PAGE CONTACT
+===================================================== */
+
+.contact-hero {
+
+    min-height: 400px;
+
+    margin-top: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/contact-banner.jpg")
+        center/cover no-repeat;
+
+}
+
+
+.contact-hero-content {
+
+    color: var(--white-color);
+
+}
+
+
+.contact-hero-content span {
+
+    color: var(--accent-color);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.contact-hero-content h1 {
+
+    font-size: 52px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-hero-content p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+                    INFORMATIONS CONTACT
+===================================================== */
+
+.contact-subtitle {
+
+    color: var(--secondary-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-section h2 {
+
+    color: var(--dark-color);
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-intro {
+
+    color: var(--gray-color);
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =====================================================
+                    CONTACT ITEMS
+===================================================== */
+
+.contact-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-icon {
+
+    min-width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: rgba(11, 94, 215, 0.1);
+
+    color: var(--primary-color);
+
+    border-radius: 50%;
+
+    font-size: 19px;
+
+}
+
+
+.contact-item h4 {
+
+    color: var(--dark-color);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+}
+
+
+.contact-item p {
+
+    color: var(--gray-color);
+
+    margin: 0;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+                    FORMULAIRE
+===================================================== */
+
+.contact-form-card {
+
+    background-color: var(--white-color);
+
+    padding: 35px;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+
+.contact-form-card h3 {
+
+    color: var(--dark-color);
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-form-card > p {
+
+    color: var(--gray-color);
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.contact-form-card .form-label {
+
+    color: var(--dark-color);
+
+    font-weight: 500;
+
+}
+
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+
+    padding: 12px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+}
+
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 0.2rem rgba(11, 94, 215, 0.12);
+
+}
+
+
+.contact-form-card textarea {
+
+    resize: none;
+
+}
+
+
+/* =====================================================
+                        CARTE
+===================================================== */
+
+.map-section {
+
+    padding: 60px 0;
+
+    background-color: #f8fafc;
+
+}
+
+
+.map-container {
+
+    overflow: hidden;
+
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.map-container iframe {
+
+    display: block;
+
+}
+
+
+/* =====================================================
+                    APPEL À L'ACTION
+===================================================== */
+
+.contact-cta {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+        );
+
+    color: var(--white-color);
+
+}
+
+
+.contact-cta span {
+
+    color: var(--accent-color);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-cta h2 {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    margin: 15px 0;
+
+}
+
+
+.contact-cta p {
+
+    color: var(--white-color);
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =====================================================
+                    RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .contact-hero {
+
+        min-height: 350px;
+
+    }
+
+
+    .contact-hero-content h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .contact-section h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .contact-form-card {
+
+        padding: 25px;
+
+    }
+
+
+    .contact-cta h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .contact-hero-content h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .contact-hero-content p {
+
+        font-size: 15px;
+
+    }
+
+
+    .contact-form-card {
+
+        padding: 20px;
+
+    }
+
+}
